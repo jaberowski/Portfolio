@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       fontFamily: {
         alkatra: ["Alkatra", "cursive"],
+        firaSans: ["Fira Sans", "sans-serif"],
       },
     },
   },

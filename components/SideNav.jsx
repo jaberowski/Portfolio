@@ -1,14 +1,24 @@
-function SideNav({ items, position }) {
+function SideNav({ items, position, currentLink }) {
   const oposite = position === "right" ? "left" : "right";
 
+  const finalclass =
+    position === "left"
+      ? " flex flex-col items-center fixed bottom-0 list-none left-10 gap-5 text-gray-700"
+      : " flex flex-col items-center fixed bottom-0 list-none right-10 gap-5 text-gray-700";
+
   return (
-    <div
-      className={` flex flex-col items-center fixed bottom-0 list-none ${position}-10 gap-5 text-gray-700`}
-    >
+    <div className={finalclass}>
       {items.map((item, index) => {
+        const isActive =
+          item.title.replace(" ", "").toLowerCase() ===
+          currentLink.toLowerCase();
         return (
           <a href={`#${item.title.replace(" ", "")}`} key={index}>
-            <div className="relative group">
+            <div
+              className={`relative group transition duration-300 ${
+                isActive && "scale-125 text-[#6c04f4] my-2 "
+              } `}
+            >
               <div className="text-2xl group-hover:text-black">{item.icon}</div>
               <h3
                 className={
