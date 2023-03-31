@@ -1,5 +1,30 @@
 import SideNav from "@/components/SideNav";
 import setupSvg from "../public/images/setup.svg";
+import {
+  HiOutlineHome,
+  HiOutlineUserCircle,
+  HiOutlinePresentationChartLine,
+} from "react-icons/hi";
+import { RiArticleLine } from "react-icons/ri";
+import { TiContacts } from "react-icons/ti";
+import { AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
+import { FiGithub } from "react-icons/fi";
+import { SiCodewars } from "react-icons/si";
+
+const leftSideNavItems = [
+  { icon: <HiOutlineHome />, title: "Home", link: "" },
+  { icon: <HiOutlineUserCircle />, title: "About Me", link: "" },
+  { icon: <HiOutlinePresentationChartLine />, title: "Projects", link: "" },
+  { icon: <RiArticleLine />, title: "Articles", link: "" },
+  { icon: <TiContacts />, title: "Contacts", link: "" },
+];
+
+const rightSideNavItems = [
+  { icon: <AiOutlineInstagram />, title: "Instagram", link: "" },
+  { icon: <AiOutlineLinkedin />, title: "LinkedIn", link: "" },
+  { icon: <FiGithub />, title: "GitHub", link: "" },
+  { icon: <SiCodewars />, title: "CodeWars", link: "" },
+];
 
 export default function Home() {
   return (
@@ -59,16 +84,8 @@ export default function Home() {
       >
         Contacts
       </section>
-      <SideNav />
-
-      <div className=" flex flex-col items-center fixed bottom-0 list-none right-10 text-2xl  gap-3">
-        <li>1</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li className="w-1 h-36 bg-black rounded-sm"></li>
-      </div>
+      <SideNav items={leftSideNavItems} position="left" />
+      <SideNav items={rightSideNavItems} position="right" />
     </div>
   );
 }
