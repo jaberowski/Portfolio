@@ -15,6 +15,7 @@ import HomeSection from "@/components/HomeSection";
 import { useState } from "react";
 import Section from "@/components/Section";
 import SocialSide from "@/components/SocialsSideNav";
+import AboutMeSection from "@/components/AboutMeSection";
 
 const leftSideNavItems = [
   { icon: <HiOutlineHome />, title: "Home", link: "" },
@@ -42,14 +43,8 @@ export default function Home() {
   return (
     <div className="">
       <HomeSection setCurrentSection={setCurrentSection} />
+      <AboutMeSection setCurrentSection={setCurrentSection} />
 
-      <Section
-        className="h-screen flex justify-center items-center"
-        id="AboutMe"
-        setCurrentSection={setCurrentSection}
-      >
-        About Me
-      </Section>
       <Section
         className="h-screen flex justify-center items-center"
         id="Projects"
