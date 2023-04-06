@@ -18,14 +18,14 @@ function ProjectsSection({ setCurrentSection }) {
       </div>
       <div className="w-[90%] h-[40%] relative flex justify-around items-center p-8 shadow-xl">
         {/* borders */}
-        <div className="absolute h-2 w-52 bg-black top-0 left-0 -translate-x-1/4 -translate-y-full" />
-        <div className="absolute h-2 w-52 bg-black top-0 right-0 translate-x-1/4 -translate-y-full" />
-        <div className="absolute h-2 w-52 bg-black bottom-0 left-0 -translate-x-1/4 translate-y-full" />
-        <div className="absolute h-2 w-52 bg-black bottom-0 right-0 translate-x-1/4 translate-y-full" />
-        <div className="absolute h-36 w-2 bg-black top-0 left-0 -translate-y-1/4 -translate-x-full" />
-        <div className="absolute h-36 w-2 bg-black bottom-0 left-0 translate-y-1/4 -translate-x-full" />
-        <div className="absolute h-36 w-2 bg-black top-0 right-0 -translate-y-1/4 translate-x-full" />
-        <div className="absolute h-36 w-2 bg-black bottom-0 right-0 translate-y-1/4 translate-x-full" />
+        <div className="absolute h-2 w-52 bg-primary_blackish top-0 left-0 -translate-x-1/4 -translate-y-full" />
+        <div className="absolute h-2 w-52 bg-primary_blackish top-0 right-0 translate-x-1/4 -translate-y-full" />
+        <div className="absolute h-2 w-52 bg-primary_blackish bottom-0 left-0 -translate-x-1/4 translate-y-full" />
+        <div className="absolute h-2 w-52 bg-primary_blackish bottom-0 right-0 translate-x-1/4 translate-y-full" />
+        <div className="absolute h-36 w-2 bg-primary_blackish top-0 left-0 -translate-y-1/4 -translate-x-full" />
+        <div className="absolute h-36 w-2 bg-primary_blackish bottom-0 left-0 translate-y-1/4 -translate-x-full" />
+        <div className="absolute h-36 w-2 bg-primary_blackish top-0 right-0 -translate-y-1/4 translate-x-full" />
+        <div className="absolute h-36 w-2 bg-primary_blackish bottom-0 right-0 translate-y-1/4 translate-x-full" />
         {/* borders */}
 
         <Image src={firstProject} alt="sdfa" className="h-[80%] w-auto" />
