@@ -17,6 +17,7 @@ import Section from "@/components/Section";
 import SocialSide from "@/components/SocialsSideNav";
 import AboutMeSection from "@/components/AboutMeSection";
 import ProjectsSection from "@/components/ProjectsSection";
+import ContactsSection from "@/components/ContactsSection";
 
 const leftSideNavItems = [
   { icon: <HiOutlineHome />, title: "Home", link: "" },
@@ -61,13 +62,14 @@ export default function Home() {
       >
         Articles
       </Section>
-      <Section
+      <ContactsSection setCurrentSection={setCurrentSection} />
+      {/* <Section
         className="h-screen flex justify-center items-center"
         id="Contacts"
         setCurrentSection={setCurrentSection}
       >
         Contacts
-      </Section>
+      </Section> */}
       <SideNav
         items={leftSideNavItems}
         position="left"

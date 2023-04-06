@@ -14,6 +14,12 @@ module.exports = {
         alkatra: ["Alkatra", "cursive"],
         firaSans: ["Fira Sans", "sans-serif"],
       },
+      colors: {
+        primary_dark: "#6e07f3",
+        primary_light: "#1a8cff",
+        primary_blackish: "#141c3a",
+        secondary: "#5be989",
+      },
     },
   },
   plugins: [],

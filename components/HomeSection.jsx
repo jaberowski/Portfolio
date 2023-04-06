@@ -11,12 +11,12 @@ function HomeSection({ setCurrentSection }) {
       className="h-screen"
     >
       <div className="navbar h-[8vh] border-b-2 border-black  px-8 flex justify-between items-center list-none ">
-        <h1 className="text-3xl font-extrabold font-alkatra text-[#6c04f4]">
+        <h1 className="text-3xl font-extrabold font-alkatra text-primary_dark">
           {"<Jf />"}
         </h1>
         <div className="flex w-1/6 justify-between">
           <li className="self-center">Blog</li>
-          <li className="border-2 border-[#6c04f4] p-3 rounded-3xl text-[#6c04f4] hover:bg-[#6c04f4] hover:text-white font-medium transition-all duration-300">
+          <li className="border-2 border-primary_dark p-3 rounded-3xl text-primary_dark hover:bg-primary_dark hover:text-white font-medium transition-all duration-300">
             Contact
           </li>
         </div>
@@ -31,7 +31,7 @@ function HomeSection({ setCurrentSection }) {
             designing) exceptional digital experiences. currently, I'm focused
             on building accessible, human-centered products at digikala
           </p>
-          <button className="text-2xl self-center border-2 p-3 drop-shadow-2xl hover:drop-shadow-lg active:drop-shadow-none active:scale-[99%] rounded-lg font-medium bg-[#6c04f4] text-white">
+          <button className="text-2xl self-center border-2 p-3 drop-shadow-2xl hover:drop-shadow-lg active:drop-shadow-none active:scale-[99%] rounded-lg font-medium bg-primary_dark text-white">
             Check out my resume
           </button>
         </div>

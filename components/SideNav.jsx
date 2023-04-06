@@ -16,7 +16,7 @@ function SideNav({ items, currentLink }) {
           <a href={`#${item.title.replace(" ", "")}`} key={index}>
             <div
               className={`relative group transition duration-300 ${
-                isActive && "scale-125 text-[#6c04f4] my-2 "
+                isActive && "scale-125 text-primary_dark my-2 "
               } `}
             >
               <div className="text-2xl ">{item.icon}</div>
