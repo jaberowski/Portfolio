@@ -3,11 +3,12 @@ import Section from "./Section";
 import me from "../public/images/me.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import TechList from "./TechList";
 
 function AboutMeSection({ setCurrentSection }) {
   return (
     <Section
-      className="h-screen flex flex-col justify-start items-center"
+      className="min-h-screen flex flex-col justify-start items-center"
       id="AboutMe"
       setCurrentSection={setCurrentSection}
     >
@@ -40,6 +41,7 @@ function AboutMeSection({ setCurrentSection }) {
           playing
         </motion.div>
       </div>
+      <TechList />
     </Section>
   );
 }
