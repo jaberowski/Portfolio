@@ -2,42 +2,57 @@ import React from "react";
 import setup from "../public/images/setup.png";
 import Image from "next/image";
 import Section from "./Section";
+import { motion } from "framer-motion";
 
 function HomeSection({ setCurrentSection }) {
   return (
     <Section
       id="Home"
       setCurrentSection={setCurrentSection}
-      className="h-screen"
+      className="relative min-h-screen h-auto w-full"
     >
-      <div className="navbar h-[8vh] border-b-2 border-black  px-8 flex justify-between items-center list-none ">
+      <div className=" relative w-screen ml-[-50vw] left-[50%] min-h-[8vh] z-10 border-b-2 border-black  px-8 flex justify-between items-center list-none">
         <h1 className="text-3xl font-extrabold font-alkatra text-primary_dark">
           {"<Jf />"}
         </h1>
-        <div className="flex w-1/6 justify-between">
+        <div className="flex  justify-between gap-4">
           <li className="self-center">Blog</li>
           <li className="border-2 border-primary_dark p-3 rounded-3xl text-primary_dark hover:bg-primary_dark hover:text-white font-medium transition-all duration-300">
             Contact
           </li>
         </div>
       </div>
-      <div className="h-[92vh]  p-5 flex flex-col justify-between">
-        <div className=" flex flex-col gap-6 w-1/2 mx-auto text-center items-center font-firaSans">
-          <h4 className="text-xl">Hi My Name is</h4>
-          <h1 className="text-6xl font-bold">Jaber Fathi</h1>
-          <h1 className="text-6xl font-bold">I Build Thing For Web</h1>
-          <p className="w-4/6">
+      <div className="min-h-[92vh] h-auto  flex flex-col justify-between gap-5 ">
+        <motion.div
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.5 }}
+          className="grow-[10] w-[85%]  md:w-[70%] lg:w-[60%] mx-auto pt-4 flex flex-col justify-center  xs lg:justify-around lg:py-8 items-center gap-4  text-center  font-firaSans "
+        >
+          <h4 className="text-lg md:text-xl 2xl:text-2xl">Hi My Name is</h4>
+          <h1 className="text-5xl lg:text-6xl 2xl:text-7xl font-bold">
+            Jaber Fathi
+          </h1>
+          <h1 className="text-4xl lg:text-5xl 2xl:text-6xl font-semibold">
+            I Build Things For Web
+          </h1>
+          <p className="text-lg lg:text-xl  ">
             I'm a software engineer specializing in building (and occasionally
             designing) exceptional digital experiences. currently, I'm focused
             on building accessible, human-centered products at digikala
           </p>
-          <button className="text-2xl self-center border-2 p-3 drop-shadow-2xl hover:drop-shadow-lg active:drop-shadow-none active:scale-[99%] rounded-lg font-medium bg-primary_dark text-white">
+          <button className="text-lg md:text-xl 2xl:text-2xl self-center border-2 p-2 2xl:p-3 drop-shadow-2xl hover:drop-shadow-lg active:drop-shadow-none active:scale-[99%] rounded-lg font-medium bg-primary_dark text-white">
             Check out my resume
           </button>
-        </div>
-        <div className="max-w-[50%] mx-auto">
+        </motion.div>
+        <motion.div
+          className="w-[90%] md:w-[80%] lg:w-[70%] xl:w-[55%]  h-auto mx-auto"
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.5 }}
+        >
           <Image src={setup} alt="" />
-        </div>
+        </motion.div>
       </div>
     </Section>
   );

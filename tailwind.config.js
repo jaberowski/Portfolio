@@ -10,6 +10,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        goRound: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+      },
+      animation: {
+        goRound: "goRound 2s linear infinite",
+      },
       fontFamily: {
         alkatra: ["Alkatra", "cursive"],
         firaSans: ["Fira Sans", "sans-serif"],
