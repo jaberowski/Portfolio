@@ -27,13 +27,13 @@ function HomeSection({ setCurrentSection }) {
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: 0.5 }}
-          className="grow-[10] w-[85%]  md:w-[70%] lg:w-[60%] mx-auto pt-4 flex flex-col justify-center  xs lg:justify-around lg:py-8 items-center gap-4  text-center  font-firaSans "
+          className="grow-[10] w-[85%]  md:w-[75%] lg:w-[65%]  mx-auto pt-4 flex flex-col justify-center  xs lg:justify-around lg:py-6 items-center gap-4  text-center  font-firaSans "
         >
           <h4 className="text-lg md:text-xl 2xl:text-2xl">Hi My Name is</h4>
           <h1 className="text-5xl lg:text-6xl 2xl:text-7xl font-bold">
             Jaber Fathi
           </h1>
-          <h1 className="text-4xl lg:text-5xl 2xl:text-6xl font-semibold">
+          <h1 className="text-4xl lg:text-5xl  font-semibold">
             I Build Things For Web
           </h1>
           <p className="text-lg lg:text-xl  ">
@@ -41,12 +41,12 @@ function HomeSection({ setCurrentSection }) {
             designing) exceptional digital experiences. currently, I'm focused
             on building accessible, human-centered products at digikala
           </p>
-          <button className="text-lg md:text-xl 2xl:text-2xl self-center border-2 p-2 2xl:p-3 drop-shadow-2xl hover:drop-shadow-lg active:drop-shadow-none active:scale-[99%] rounded-lg font-medium bg-primary_dark text-white">
+          <button className="text-lg md:text-xl  self-center border-2 p-2 2xl:p-3 drop-shadow-2xl hover:drop-shadow-lg active:drop-shadow-none active:scale-[99%] rounded-lg font-medium bg-primary_dark text-white">
             Check out my resume
           </button>
         </motion.div>
         <motion.div
-          className="w-[90%] md:w-[80%] lg:w-[70%] xl:w-[55%]  h-auto mx-auto"
+          className="w-[90%] md:w-[80%] lg:w-[70%] xl:w-[50%]  h-auto mx-auto"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: 0.5 }}
