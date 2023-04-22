@@ -30,7 +30,7 @@ function HomeSection({ setCurrentSection }) {
           className="grow-[10] w-[85%]  md:w-[75%] lg:w-[65%]  mx-auto pt-4 flex flex-col justify-center  xs lg:justify-around lg:py-6 items-center gap-4  text-center  font-firaSans "
         >
           <h4 className="text-lg md:text-xl 2xl:text-2xl">Hi My Name is</h4>
-          <h1 className="text-5xl lg:text-6xl 2xl:text-7xl font-bold">
+          <h1 className="text-5xl lg:text-6xl 2xl:text-7xl font-bold bg-gradient-to-r from-primary_light from-33 to-secondary bg-clip-text text-fil text-transparent">
             Jaber Fathi
           </h1>
           <h1 className="text-4xl lg:text-5xl  font-semibold">
