@@ -3,6 +3,7 @@ import setup from "../public/images/setup.png";
 import Image from "next/image";
 import Section from "./Section";
 import { motion } from "framer-motion";
+import TypewriterComponent from "typewriter-effect";
 
 function HomeSection({ setCurrentSection }) {
   return (
@@ -36,11 +37,27 @@ function HomeSection({ setCurrentSection }) {
           <h1 className="text-4xl lg:text-5xl  font-semibold">
             I Build Things For Web
           </h1>
-          <p className="text-lg lg:text-xl  ">
-            I'm a software engineer specializing in building (and occasionally
-            designing) exceptional digital experiences. currently, I'm focused
-            on building accessible, human-centered products at digikala
-          </p>
+          <div className="text-lg lg:text-xl  text-gray-800">
+            <TypewriterComponent
+              onInit={(typewriter) => {
+                typewriter
+                  .pauseFor(1500)
+                  .typeString(
+                    "I am a self-taught programmer who is always learning new stuff and never confused!"
+                  )
+                  .callFunction(() => {
+                    console.log("String typed out!");
+                  })
+                  .pauseFor(2500)
+                  .deleteChars(15)
+                  .typeString("often confused!")
+                  .callFunction(() => {
+                    console.log("All strings were deleted");
+                  })
+                  .start();
+              }}
+            />
+          </div>
           <button className="text-lg md:text-xl  self-center border-2 p-2 2xl:p-3 drop-shadow-2xl hover:drop-shadow-lg active:drop-shadow-none active:scale-[99%] rounded-lg font-medium bg-primary_dark text-white">
             Check out my resume
           </button>
