@@ -4,6 +4,7 @@ import me from "../public/images/me.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import TechList from "./TechList";
+import TypewriterComponent from "typewriter-effect";
 
 function AboutMeSection({ setCurrentSection }) {
   return (
@@ -24,12 +25,19 @@ function AboutMeSection({ setCurrentSection }) {
             Hi, I’m Jaber. Nice to meet you.
           </h2>
           <p className="text-lg  lg:text-xl leading-8">
-            Since beginning my journey as a freelance designer over 11 years
-            ago, I've done remote work for agencies, consulted for startups, and
-            collaborated with talented people to create digital products for
-            both business and consumer use. I'm quietly confident, naturally
-            curious, and perpetually working on improving my chops one design
-            problem at a time.
+            I got interested in programming a couple of years ago after my
+            previous plans failed. From the beginning of my journey, I tried to
+            learn programming on my own by reading articles and documentations,
+            and watching courses of the best instructors in the world. Even
+            though it had its difficulties, going through this process improved
+            my problem-solving skills and I believe it would help me keep up
+            with cutting-edge technologies in the future. I managed to reach
+            this point despite working a part-time job and studying for my
+            Bachelor’s degree at university. I'm looking for my first job now
+            that I've decided to pursue it as a career. So, if there is an
+            opening for a passionate junior Front-end web developer with good
+            idea's who can chat about football events for hours, I believe I
+            would be a perfect match for your team.
           </p>
         </div>
       </div>

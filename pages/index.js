@@ -58,14 +58,14 @@ export default function Home() {
     <div className="relative overflow-x-hidden">
       {/* media breaks show */}
 
-      <div className="absolute w-14 h-14 bg-gray-400 rounded-full top-2 text-3xl flex justify-center items-center">
+      {/* <div className="absolute w-14 h-14 bg-gray-400 rounded-full top-2 text-3xl flex justify-center items-center">
         <div className="block sm:hidden">xs</div>
         <div className="hidden sm:block md:hidden">sm</div>
         <div className="hidden md:block lg:hidden">md</div>
         <div className="hidden lg:block xl:hidden">lg</div>
         <div className="hidden xl:block 2xl:hidden">xl</div>
         <div className="hidden 2xl:block">2xl</div>
-      </div>
+      </div> */}
 
       {/* media breaks show */}
       <div className="w-full md:w-[88%] mx-auto">
