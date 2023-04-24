@@ -3,7 +3,6 @@ import Section from "./Section";
 import firstProject from "../public/images/first-project.webp";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import TextCarousel from "./TextCarousel";
 
 const items = [
   {
