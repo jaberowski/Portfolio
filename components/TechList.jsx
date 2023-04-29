@@ -46,7 +46,10 @@ function TechList() {
               </>
             );
           return (
-            <div className="relative flex flex-col items-center justify-center  p-4 rounded-md shadow-md bg-gray-50 aspect-[5/3]">
+            <div
+              className="relative flex flex-col items-center justify-center  p-4 rounded-md shadow-md bg-gray-50 aspect-[5/3]"
+              key={item.title}
+            >
               {borderDecoration}
               <motion.div
                 className="text-[56px] text-secondary "

@@ -127,8 +127,11 @@ function ContactsSection({ setCurrentSection, items }) {
             <div className="self-center">
               <h3 className="text-center">Socials</h3>
               <div className="flex flex-row border-2 border-secondary bg-green-100  rounded-full shadow-md">
-                {items.map((item) => (
-                  <div className="text-3xl hover:bg-secondary rounded-full p-2">
+                {items.map((item, i) => (
+                  <div
+                    className="text-3xl hover:bg-secondary rounded-full p-2"
+                    key={i}
+                  >
                     {item.icon}
                   </div>
                 ))}

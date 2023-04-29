@@ -33,11 +33,11 @@ function AboutMeSection({ setCurrentSection }) {
             my problem-solving skills and I believe it would help me keep up
             with cutting-edge technologies in the future. I managed to reach
             this point despite working a part-time job and studying for my
-            Bachelor’s degree at university. I'm looking for my first job now
-            that I've decided to pursue it as a career. So, if there is an
-            opening for a passionate junior Front-end web developer with good
-            idea's who can chat about football events for hours, I believe I
-            would be a perfect match for your team.
+            Bachelor&#39;s degree at university. I&#39;m looking for my first
+            job now that I&#39;ve decided to pursue it as a career. So, if there
+            is an opening for a passionate junior Front-end web developer with
+            good idea&#39;s who can chat about football events for hours, I
+            believe I would be a perfect match for your team.
           </p>
         </div>
       </div>
