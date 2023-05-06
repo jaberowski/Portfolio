@@ -23,7 +23,7 @@ const leftSideNavItems = [
   { icon: <HiOutlineHome />, title: "Home", link: "" },
   { icon: <HiOutlineUserCircle />, title: "About Me", link: "" },
   { icon: <HiOutlinePresentationChartLine />, title: "Projects", link: "" },
-  { icon: <RiArticleLine />, title: "Articles", link: "" },
+  // { icon: <RiArticleLine />, title: "Articles", link: "" }, //disable article section for now
   { icon: <TiContacts />, title: "Contacts", link: "" },
 ];
 
@@ -72,13 +72,13 @@ export default function Home() {
         <HomeSection setCurrentSection={setCurrentSection} />
         <AboutMeSection setCurrentSection={setCurrentSection} />
         <ProjectsSection setCurrentSection={setCurrentSection} />
-        <Section
+        {/* <Section  //disable article section for now
           className="h-screen flex justify-center items-center"
           id="Articles"
           setCurrentSection={setCurrentSection}
         >
           Articles
-        </Section>
+        </Section> */}
         <ContactsSection
           setCurrentSection={setCurrentSection}
           items={rightSideNavItems}
